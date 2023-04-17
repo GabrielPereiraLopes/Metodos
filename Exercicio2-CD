@@ -1,0 +1,21 @@
+package Produtos;
+
+public class CD{
+        private String nome;
+        private double preco;
+        private int faixas;
+    
+    
+        public void CD(String nome, double preco, int faixas) {
+            this.nome = nome;
+            this.preco = preco;
+            this.faixas = faixas;
+             
+
+        }
+
+        @Override
+        public String toString() {
+            return "Nome: "+nome + "\npreco: " + preco + "\nautor: " + faixas;
+        }
+}
