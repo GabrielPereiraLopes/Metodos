@@ -1,0 +1,72 @@
+
+package Main;
+import Produtos.Livro;
+import Produtos.CD;
+import Produtos.DVD;
+import java.util.Scanner;
+
+public class Loja {
+    
+    public static void main(String[] args){
+        
+        Scanner sc = new Scanner(System.in);
+        Livro livro= new Livro();
+        CD cd = new CD();
+        DVD dvd = new DVD();
+        
+        System.out.println("Digite o nome do livro\n: ");
+        String nomelivro1 = sc.nextLine();
+        System.out.println("Digite o autor do livro\n: ");
+        String autorlivro1 = sc.nextLine();
+        System.out.println("Digite o preco do livro\n: ");
+        double precolivro1 = sc.nextDouble();
+        
+        livro.Livro(nomelivro1, precolivro1, autorlivro1);
+        System.out.println(livro.toString());
+        
+        System.out.println("\nDigite o nome do CD: ");
+        String nomecd1 = sc.nextLine();
+        System.out.println("\nDigite o numero de faixas do CD: ");
+        int faixascd1 = sc.nextInt();
+        System.out.println("\nDigite o preco do CD: ");
+        double precocd1 = sc.nextDouble();
+        
+        cd.CD(nomecd1, precocd1, faixascd1);
+        System.out.println(cd.toString());
+        
+        System.out.println("\nDigite o nome do DVD: ");
+        String nomedvd1 = sc.nextLine();
+        System.out.println("\nDigite a duracao do CD: ");
+        double duracaodvd1 = sc.nextDouble();
+        System.out.println("\nDigite o preco do DVD: ");
+        double precodvd1 = sc.nextDouble();
+        
+        dvd.DVD(nomedvd1, precodvd1, duracaodvd1);
+        System.out.println(dvd.toString());
+        
+        System.out.println("\nDigite o nome do DVD: ");
+        String nomedvd2 = sc.nextLine();
+        System.out.println("\nDigite a duracao do CD: ");
+        double duracaodvd2 = sc.nextDouble();
+        System.out.println("\nDigite o preco do DVD: ");
+        double precodvd2 = sc.nextDouble();
+        
+        dvd.DVD(nomedvd2, precodvd2, duracaodvd2);
+        System.out.println(dvd.toString());
+        
+        System.out.println("Digite o nome do livro\n: ");
+        String nomelivro2 = sc.nextLine();
+        System.out.println("Digite o autor do livro\n: ");
+        String autorlivro2 = sc.nextLine();
+        System.out.println("Digite o preco do livro\n: ");
+        double precolivro2 = sc.nextDouble();
+        
+        livro.Livro(nomelivro2, precolivro2, autorlivro2);
+        System.out.println(livro.toString());
+    }
+    
+    
+    
+    
+    
+}
