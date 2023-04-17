@@ -1,0 +1,23 @@
+
+package Produtos;
+
+
+   public class DVD{
+        private String nome;
+        private double preco;
+        private double duracao;
+    
+    
+        public void DVD(String nome, double preco, double duracao) {
+            this.nome = nome;
+            this.preco = preco;
+            this.duracao = duracao;
+             
+
+        }
+
+         @Override
+        public String toString() {
+            return "Nome" + nome+ "preco: "+ preco+ "Duracao:"+duracao;
+        }
+    }
