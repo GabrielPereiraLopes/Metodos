@@ -1,0 +1,55 @@
+
+package temperatura;
+
+public class ConversaoDeUnidadesDeTemperatura{
+
+    public static double CelciusFahrenheit(double c){
+        double f = (9 *c/5) + 32;
+        return f;                      
+    }
+    
+    public static double FahrenheitCelcius(double f){
+        double c= (f - 32) * 5/9;
+        return c ;                     
+    }
+    
+    public static double CelciusKelvin(double c){
+        double k = c + 273.15 ;
+        
+        return k ;                     
+    }
+    
+    public static double KelvinCelcius(double k){
+        double c = k - 273.15;
+        
+        return c ;                     
+    }
+    
+    public static double CelciusReaumur(double c){
+        double re = c * 4/5;
+        
+        return re ;                     
+    }
+    
+    public static double ReaumurCelcius(double re){
+        double  c = re * 5/4;
+        
+        return c ;                     
+    }
+    
+    public static double KelvinRankine(double k){
+        double  r = k * 1.8;
+         
+        return r;                     
+    }
+    
+    public static double RankineKelvin(double r){
+        double k = r/1.8 ;
+        
+        return k ;                     
+    }
+}
+
+
+
+
