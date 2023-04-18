@@ -1,1 +1,56 @@
+package main;
+
+import java.util.Scanner;
+import temperatura.ConversaoDeUnidadesDeTemperatura;
+
+public class Main {
+    public static void main(String[] args){
+   Scanner sc = new Scanner(System.in);
+   
+   ConversaoDeUnidadesDeTemperatura calc = new ConversaoDeUnidadesDeTemperatura();  
+   
+   System.out.println("Digite a temperatura em Celcius para Fahrenheit: ");
+   double c = sc.nextDouble();
+   double f=ConversaoDeUnidadesDeTemperatura.CelciusFahrenheit(c); 
+   System.out.println("Temperatura em Fahrenheit: "+f);
+   
+   System.out.println("Digite a temperatura em Fahrenheit para Celcius: ");
+   double fa = sc.nextDouble();
+   double ce =ConversaoDeUnidadesDeTemperatura.FahrenheitCelcius(fa); 
+   System.out.println("Temperatura em Celcius: "+ce);
+    
+    
+   System.out.println("Digite a temperatura em Celcius para Kelvin: ");
+   double cel = sc.nextDouble();
+   double k =ConversaoDeUnidadesDeTemperatura. CelciusKelvin(cel); 
+   System.out.println("Temperatura em Kelvin : "+k);
+   
+   System.out.println("Digite a temperatura em Kelvin para Celcius : ");
+   double ke = sc.nextDouble();
+   double celc=ConversaoDeUnidadesDeTemperatura. CelciusKelvin(ke); 
+   System.out.println("Temperatura em Celcius : "+celc);
+   
+   System.out.println("Digite a temperatura em Celcius para Reaumur: ");
+   double celci = sc.nextDouble();
+   double re=ConversaoDeUnidadesDeTemperatura. CelciusReaumur(celci); 
+   System.out.println("Temperatura em Reaumur : "+re);
+   
+   System.out.println("Digite a temperatura em Reaumur para Celcius: ");
+   double rea = sc.nextDouble();
+   double celciu=ConversaoDeUnidadesDeTemperatura. ReaumurCelcius(rea); 
+   System.out.println("Temperatura em Celcius : "+celciu);
+   
+   
+   System.out.println("Digite a temperatura em Kelvin para Rankine : ");
+   double kel = sc.nextDouble();
+   double r=ConversaoDeUnidadesDeTemperatura.KelvinRankine(kel); 
+   System.out.println("Temperatura em Rankine : "+r);
+   
+   System.out.println("Digite a temperatura em Rankine para Kelvin  : ");
+   double ra = sc.nextDouble();
+   double kelv=ConversaoDeUnidadesDeTemperatura.RankineKelvin(ra); 
+   System.out.println("Temperatura em Kelvin : "+kelv);
+ 
+    }
+}
 
